@@ -1,0 +1,15 @@
+# Free AI Tokens, Credits and API Trials
+
+> A maintained list of international AI services offering free tokens, credits, API access, coding tools, agents, and multimodal trials, with official references and direct signup links.
+
+Last updated: 2026-07-23
+
+## Primary pages
+- English international list: https://yoyoworks.github.io/ai_free_quota/us/
+- Complete Chinese list: https://yoyoworks.github.io/ai_free_quota/zh/
+- Language landing page: https://yoyoworks.github.io/ai_free_quota/
+
+## Structured data
+- Bilingual JSON dataset: https://yoyoworks.github.io/ai_free_quota/ai-free-quotas.json
+
+The English page contains international services only. The Chinese page contains both China-accessible and international services. All entries are generated from one structured source and link to official references.
