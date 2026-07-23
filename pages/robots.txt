@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://yoyoworks.github.io/ai_free_quota/sitemap.xml
