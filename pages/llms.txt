@@ -6,9 +6,8 @@ Last updated: 2026-07-23
 
 ## Primary pages
 - English international list: /us/
-- China-accessible services in Chinese: /zh/
-- International services in Chinese: /zh/international.html
+- Complete Chinese list: /zh/
 - Language landing page: /
 - Public repository README: https://github.com/yoyoworks/ai_free_quota
 
-The English page contains international services only. The Chinese section is split into China-accessible and international pages. Both pages are pre-rendered from one private structured source and link to official references.
+The English page contains international services only. The Chinese page contains both China-accessible and international services. Both pages are statically pre-rendered from one private structured source and link to official references.
