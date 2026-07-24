@@ -5,11 +5,10 @@
 Last updated: 2026-07-23
 
 ## Primary pages
-- English international list: https://yoyoworks.github.io/ai_free_quota/us/
-- Complete Chinese list: https://yoyoworks.github.io/ai_free_quota/zh/
-- Language landing page: https://yoyoworks.github.io/ai_free_quota/
+- English international list: /us/
+- China-accessible services in Chinese: /zh/
+- International services in Chinese: /zh/international.html
+- Language landing page: /
+- Public repository README: https://github.com/yoyoworks/ai_free_quota
 
-## Structured data
-- Bilingual JSON dataset: https://yoyoworks.github.io/ai_free_quota/ai-free-quotas.json
-
-The English page contains international services only. The Chinese page contains both China-accessible and international services. All entries are generated from one structured source and link to official references.
+The English page contains international services only. The Chinese section is split into China-accessible and international pages. Both pages are pre-rendered from one private structured source and link to official references.
