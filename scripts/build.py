@@ -96,8 +96,8 @@ def validate(data: dict[str, Any]) -> None:
 
     seen: set[str] = set()
     required = {
-        "id", "category", "platform_zh", "platform_en", "quota_zh", "quota_en",
-        "reference", "signup", "verified_at",
+        "id", "category", "platform_zh", "quota_zh", "reference", "signup",
+        "verified_at",
     }
     for entry in entries:
         missing = required - entry.keys()
@@ -109,6 +109,12 @@ def validate(data: dict[str, Any]) -> None:
         seen.add(entry_id)
         if entry["category"] not in section_ids:
             raise ValueError(f"unknown category for {entry_id}")
+        if entry["category"] == "international":
+            missing_english = {"platform_en", "quota_en"} - entry.keys()
+            if missing_english:
+                raise ValueError(
+                    f"international entry {entry_id} is missing fields: {sorted(missing_english)}"
+                )
         try:
             date.fromisoformat(entry["verified_at"])
         except (TypeError, ValueError) as exc:
@@ -133,6 +139,16 @@ def ordered_entries(data: dict[str, Any], categories: set[str]) -> list[dict[str
 
 def absolute_url(site_url: str, path: str) -> str:
     return urljoin(site_url.rstrip("/") + "/", path)
+
+
+def reference_label(item: dict[str, Any], language: str) -> str:
+    key = "label_zh" if language == "zh" else "label_en"
+    return item["reference"].get(key, "官方说明" if language == "zh" else "Official reference")
+
+
+def signup_label(item: dict[str, Any], language: str) -> str:
+    key = "label_zh" if language == "zh" else "label_en"
+    return item["signup"].get(key, "注册 / 进入" if language == "zh" else "Open service")
 
 
 def canonical_site_url(seo: dict[str, Any]) -> str:
@@ -185,7 +201,6 @@ def render_rows(selected: list[dict[str, Any]], language: str) -> str:
     headers = COPY[language]["headers"]
     rows = []
     for item in selected:
-        signup_label = item["signup"]["label_zh" if zh else "label_en"]
         rows.append(render("row.html", {
             "ENTRY_ID": escape(item["id"]),
             "PLATFORM": escape(item["platform_zh" if zh else "platform_en"]),
@@ -193,10 +208,10 @@ def render_rows(selected: list[dict[str, Any]], language: str) -> str:
             "QUOTA_HEADER": escape(headers[1]),
             "REFERENCE_HEADER": escape(headers[2]),
             "REFERENCE_URL": escape(item["reference"]["url"]),
-            "REFERENCE_LABEL": escape(item["reference"]["label_zh" if zh else "label_en"]),
+            "REFERENCE_LABEL": escape(reference_label(item, language)),
             "SIGNUP_HEADER": escape(headers[3]),
             "SIGNUP_URL": escape(item["signup"]["url"]),
-            "SIGNUP_LABEL": escape(signup_label),
+            "SIGNUP_LABEL": escape(signup_label(item, language)),
             "SIGNUP_REL": "noopener noreferrer sponsored" if item["signup"].get("is_referral") else "noopener noreferrer",
         }))
     return "".join(rows)

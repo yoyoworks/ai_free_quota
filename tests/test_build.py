@@ -17,7 +17,9 @@ SPEC.loader.exec_module(SITE_BUILD)
 
 class BuildTests(unittest.TestCase):
     def test_dataset_is_valid(self) -> None:
-        SITE_BUILD.validate(json.loads((ROOT / "data/ai-free-quotas.json").read_text(encoding="utf-8")))
+        data = json.loads((ROOT / "data/ai-free-quotas.json").read_text(encoding="utf-8"))
+        SITE_BUILD.validate(data)
+        self.assertEqual(29, len(data["entries"]))
 
     def test_build_produces_complete_static_site(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
