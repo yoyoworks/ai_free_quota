@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-24",
+  "updated_at": "2026-07-26",
   "date_published": "2026-07-23",
   "sections": [
     {
@@ -21,6 +21,7 @@
   "entries": [
     {
       "id": "zhipu-bigmodel",
+      "display_order": 12,
       "category": "china",
       "platform_zh": "智谱 BigModel",
       "platform_en": "Zhipu BigModel",
@@ -41,6 +42,7 @@
     },
     {
       "id": "baidu-qianfan",
+      "display_order": 3,
       "category": "china",
       "platform_zh": "百度千帆",
       "platform_en": "Baidu Qianfan",
@@ -61,6 +63,7 @@
     },
     {
       "id": "tencent-tokenhub",
+      "display_order": 8,
       "category": "china",
       "platform_zh": "腾讯云 TokenHub",
       "platform_en": "Tencent Cloud TokenHub",
@@ -81,6 +84,7 @@
     },
     {
       "id": "workbuddy-codebuddy",
+      "display_order": 0,
       "category": "china",
       "platform_zh": "腾讯 WorkBuddy / CodeBuddy",
       "platform_en": "Tencent WorkBuddy / CodeBuddy",
@@ -101,6 +105,7 @@
     },
     {
       "id": "qoder-cn",
+      "display_order": 1,
       "category": "china",
       "platform_zh": "阿里 Qoder CN",
       "platform_en": "Alibaba Qoder CN",
@@ -121,6 +126,7 @@
     },
     {
       "id": "xiaomi-mimo-code",
+      "display_order": 11,
       "category": "china",
       "platform_zh": "小米 MiMo Code / MiMo Auto",
       "quota_zh": "小米官方 MiMo Code 项目内置 MiMo Auto 限时免费通道，可匿名、零配置开始使用终端 AI 编程助手；免费期限、可用模型、速率和后续登录要求可能调整，以官方项目和产品页面为准。",
@@ -135,6 +141,7 @@
     },
     {
       "id": "volcengine-ark",
+      "display_order": 9,
       "category": "china",
       "platform_zh": "火山方舟",
       "platform_en": "Volcengine Ark",
@@ -155,6 +162,7 @@
     },
     {
       "id": "volcengine-ark-kb",
+      "display_order": 10,
       "category": "china",
       "platform_zh": "火山方舟知识库",
       "platform_en": "Volcengine Ark Knowledge Base",
@@ -175,6 +183,7 @@
     },
     {
       "id": "alibaba-model-studio-cn",
+      "display_order": 2,
       "category": "china",
       "platform_zh": "阿里云百炼 Model Studio（中国内地）",
       "quota_zh": "首次开通阿里云百炼后，华北 2（北京）且服务部署范围为中国内地的模型会按模型发放新人免费额度，有效期 90 天。当前多款文本与多模态模型为 100 万 Tokens，部分图像模型为 100 张、语音识别为 10 小时等，具体额度以价格页和控制台为准。",
@@ -189,6 +198,7 @@
     },
     {
       "id": "modelscope-api-inference",
+      "display_order": 5,
       "category": "china",
       "platform_zh": "魔搭 ModelScope API Inference",
       "quota_zh": "注册用户绑定已实名的阿里云账号后，可免费使用开源模型 API Inference。当前每位用户每日总计 2000 次调用、单模型最多 200 次；部分大模型为每日 100 次，模型范围、并发和额度会动态调整。",
@@ -203,6 +213,7 @@
     },
     {
       "id": "siliconflow-free-models",
+      "display_order": 6,
       "category": "china",
       "platform_zh": "SiliconFlow 硅基流动免费模型",
       "quota_zh": "完成实名认证后可调用平台全部免费模型，免费模型账单消耗为 0，Rate Limits 使用固定值；部分模型同时提供免费原名版本与名称带 `Pro/` 的收费版本。实际免费模型列表和限速以控制台为准。",
@@ -217,6 +228,7 @@
     },
     {
       "id": "iflytek-spark-lite",
+      "display_order": 4,
       "category": "china",
       "platform_zh": "讯飞星火 Spark Lite",
       "quota_zh": "Spark Lite 语言模型支持免费使用，并提供 OpenAI 兼容的 HTTP API；官方文档同时提供免费额度领取入口。其他 Spark 版本的可用免费资源、并发和有效期以产品页及控制台为准。",
@@ -231,6 +243,7 @@
     },
     {
       "id": "stepfun-step-plan",
+      "display_order": 7,
       "category": "china",
       "platform_zh": "阶跃星辰 Step Plan",
       "quota_zh": "限时活动截至 2026 年 7 月 31 日：新用户可免费体验 Flash Mini 15 天，套餐标称 4 亿 Credits 月使用量，支持旗舰模型与智能路由；每邀请 1 位好友可再延长 15 天，累计最高 90 天。",
@@ -245,6 +258,7 @@
     },
     {
       "id": "alibaba-model-studio-sg",
+      "display_order": 13,
       "category": "international",
       "platform_zh": "阿里云百炼 Model Studio（新加坡）",
       "platform_en": "Alibaba Cloud Model Studio (Singapore)",
@@ -265,6 +279,7 @@
     },
     {
       "id": "tencent-miora",
+      "display_order": 28,
       "category": "international",
       "platform_zh": "腾讯 Miora",
       "platform_en": "Tencent Design Miora",
@@ -285,6 +300,7 @@
     },
     {
       "id": "google-gemini-api",
+      "display_order": 19,
       "category": "international",
       "platform_zh": "Google Gemini API / AI Studio",
       "platform_en": "Google Gemini API / AI Studio",
@@ -305,6 +321,7 @@
     },
     {
       "id": "openrouter",
+      "display_order": 25,
       "category": "international",
       "platform_zh": "OpenRouter",
       "platform_en": "OpenRouter",
@@ -325,6 +342,7 @@
     },
     {
       "id": "github-models",
+      "display_order": 18,
       "category": "international",
       "platform_zh": "GitHub Models",
       "platform_en": "GitHub Models",
@@ -345,6 +363,7 @@
     },
     {
       "id": "nvidia-nim",
+      "display_order": 24,
       "category": "international",
       "platform_zh": "NVIDIA NIM",
       "platform_en": "NVIDIA NIM",
@@ -365,6 +384,7 @@
     },
     {
       "id": "cloudflare-workers-ai",
+      "display_order": 15,
       "category": "international",
       "platform_zh": "Cloudflare Workers AI",
       "platform_en": "Cloudflare Workers AI",
@@ -385,6 +405,7 @@
     },
     {
       "id": "hugging-face-inference",
+      "display_order": 21,
       "category": "international",
       "platform_zh": "Hugging Face Inference Providers",
       "platform_en": "Hugging Face Inference Providers",
@@ -405,6 +426,7 @@
     },
     {
       "id": "mistral-api",
+      "display_order": 23,
       "category": "international",
       "platform_zh": "Mistral API",
       "platform_en": "Mistral API",
@@ -425,6 +447,7 @@
     },
     {
       "id": "cohere",
+      "display_order": 16,
       "category": "international",
       "platform_zh": "Cohere",
       "platform_en": "Cohere",
@@ -445,6 +468,7 @@
     },
     {
       "id": "meta-model-api",
+      "display_order": 22,
       "category": "international",
       "platform_zh": "Meta Model API",
       "platform_en": "Meta Model API",
@@ -461,6 +485,7 @@
     },
     {
       "id": "fireworks-ai",
+      "display_order": 17,
       "category": "international",
       "platform_zh": "Fireworks AI",
       "platform_en": "Fireworks AI",
@@ -477,6 +502,7 @@
     },
     {
       "id": "replicate-try-free",
+      "display_order": 26,
       "category": "international",
       "platform_zh": "Replicate Try for Free",
       "platform_en": "Replicate Try for Free",
@@ -493,6 +519,7 @@
     },
     {
       "id": "groqcloud",
+      "display_order": 20,
       "category": "international",
       "platform_zh": "GroqCloud",
       "platform_en": "GroqCloud",
@@ -509,6 +536,7 @@
     },
     {
       "id": "cerebras-inference",
+      "display_order": 14,
       "category": "international",
       "platform_zh": "Cerebras Inference",
       "platform_en": "Cerebras Inference",
@@ -525,6 +553,7 @@
     },
     {
       "id": "sambanova-cloud",
+      "display_order": 27,
       "category": "international",
       "platform_zh": "SambaNova Cloud",
       "platform_en": "SambaNova Cloud",
